@@ -226,7 +226,7 @@ codex mcp list
 - Проект: https://github.com/Liozhang/z-search
 - Релизы: https://github.com/Liozhang/z-search/releases
 
-Плагин ищет в OpenAlex, Semantic Scholar, PubMed, Europe PMC и других источниках, умеет импортировать результаты и прикреплять PDF. Он входит в основной контур: после импорта связанной литературы из Inciteful им пополняют коллекцию поиском по словам и метаданным, а затем переходят к загрузке PDF.
+Плагин ищет в OpenAlex, Semantic Scholar, PubMed, Europe PMC и других источниках, отображает уровень журнала, Impact Factor, умеет импортировать результаты и прикреплять PDF.
 
 <a id="ru-8"></a>
 
