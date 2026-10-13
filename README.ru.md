@@ -5,7 +5,7 @@
 Практический гайд по поиску, массовому сбору и анализу научных статей с помощью Zotero и его плагинов.
 Палочка-выручалочка для написания литобзоров.
 
-Linux / Ubuntu · Zotero · Inciteful · OpenAlex · Zotero Scihub · Codex · MCP · Semantic Search
+Linux / Ubuntu · Zotero · Inciteful · Z-Search · OpenAlex · Zotero Scihub · Codex · MCP · Semantic Search
 
 ## Зачем это нужно
 
@@ -21,7 +21,7 @@ Linux / Ubuntu · Zotero · Inciteful · OpenAlex · Zotero Scihub · Codex · M
 | Zotero Scihub (`feature/annas-archive-provider`) | Пакетная загрузка PDF для записей с DOI. В этой ветке рядом со Sci-Hub есть Anna's Archive; в `master` этого выбора нет | Основной |
 | llm-for-zotero + Codex CLI | Вопросы к PDF, сопоставление работ, извлечение методологии; вход через ChatGPT без отдельного API-ключа | Основной |
 | Zotero Semantic Search | Локальный поиск по смыслу среди фрагментов PDF, похожие документы, MCP | Основной |
-| Z-Search | Поиск сразу в нескольких источниках и пакетный импорт. Не умеет импортировать в отдельные папки | Опциональный |
+| Z-Search | Поиск сразу в нескольких источниках и пакетный импорт | Основной |
 
 ## Схема работы
 
@@ -33,6 +33,8 @@ Inciteful
 Связанные публикации
         ↓
 Пакетный импорт BibTeX в Zotero
+        ↓
+Z-Search
         ↓
 OpenAlex PDF Finder
         ↓
@@ -52,7 +54,7 @@ Semantic Search / llm-for-zotero + Codex
 4. [Zotero Scihub](#ru-4)
 5. [llm-for-zotero + Codex — работа с текстами PDF без отдельного API-ключа](#ru-5)
 6. [Zotero Semantic Search — локальный семантический поиск по PDF](#ru-6)
-7. [Z-Search (опционально)](#ru-7)
+7. [Z-Search](#ru-7)
 8. [Безопасность публичного репозитория](#ru-8)
 9. [Источники и документация](#ru-9)
 
@@ -219,14 +221,12 @@ codex mcp list
 
 <a id="ru-7"></a>
 
-## 7. Z-Search (опционально)
+## 7. Z-Search
 
 - Проект: https://github.com/Liozhang/z-search
 - Релизы: https://github.com/Liozhang/z-search/releases
 
-Плагин ищет в OpenAlex, Semantic Scholar, PubMed, Europe PMC и других источниках, умеет импортировать результаты и прикреплять PDF. Он удобен для массового поиска по словам и метаданным.
-
-Минус плагина: массово импортированные результаты не сохраняются в нужные вложенные коллекции Zotero.
+Плагин ищет в OpenAlex, Semantic Scholar, PubMed, Europe PMC и других источниках, умеет импортировать результаты и прикреплять PDF. Он входит в основной контур: после импорта связанной литературы из Inciteful им пополняют коллекцию поиском по словам и метаданным, а затем переходят к загрузке PDF.
 
 <a id="ru-8"></a>
 

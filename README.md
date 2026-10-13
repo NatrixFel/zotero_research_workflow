@@ -5,7 +5,7 @@
 A practical guide to finding, batch-collecting, and analyzing research articles with Zotero and its plugins.
 A lifesaver for writing literature reviews.
 
-Linux / Ubuntu · Zotero · Inciteful · OpenAlex · Zotero Scihub · Codex · MCP · Semantic Search
+Linux / Ubuntu · Zotero · Inciteful · Z-Search · OpenAlex · Zotero Scihub · Codex · MCP · Semantic Search
 
 ## Why this is needed
 
@@ -21,7 +21,7 @@ The goal is to turn Zotero from a bibliography manager into a research workspace
 | Zotero Scihub (`feature/annas-archive-provider`) | Batch-download PDFs for records that have a DOI. This branch adds Anna's Archive beside Sci-Hub; `master` has no such choice | Core |
 | llm-for-zotero + Codex CLI | Questions about PDFs, comparison of papers, and extraction of methods; sign in through ChatGPT with no separate API key | Core |
 | Zotero Semantic Search | Local meaning-based search across PDF passages, similar documents, MCP | Core |
-| Z-Search | Search several sources at once and import results in bulk. Cannot import into separate folders | Optional |
+| Z-Search | Search several sources at once and import results in bulk | Core |
 
 ## Workflow
 
@@ -33,6 +33,8 @@ Inciteful
 Related publications
         ↓
 Batch BibTeX import into Zotero
+        ↓
+Z-Search
         ↓
 OpenAlex PDF Finder
         ↓
@@ -52,7 +54,7 @@ Full-text analysis
 4. [Zotero Scihub](#en-4)
 5. [llm-for-zotero + Codex — working with PDF texts without a separate API key](#en-5)
 6. [Zotero Semantic Search — local semantic search over PDFs](#en-6)
-7. [Z-Search (optional)](#en-7)
+7. [Z-Search](#en-7)
 8. [Public repository safety](#en-8)
 9. [Sources and documentation](#en-9)
 
@@ -219,14 +221,12 @@ This can be useful for integrating the ChatGPT API, DeepSeek, and similar servic
 
 <a id="en-7"></a>
 
-## 7. Z-Search (optional)
+## 7. Z-Search
 
 - Project: https://github.com/Liozhang/z-search
 - Releases: https://github.com/Liozhang/z-search/releases
 
-The plugin searches OpenAlex, Semantic Scholar, PubMed, Europe PMC, and other sources. It can import results and attach PDFs. It is useful for bulk search by words and metadata.
-
-The drawback: mass-imported results are not saved into the nested Zotero collections you want.
+The plugin searches OpenAlex, Semantic Scholar, PubMed, Europe PMC, and other sources. It can import results and attach PDFs. It is part of the main workflow: after the related literature from Inciteful is imported, use it to add records by words and metadata, then move on to downloading PDFs.
 
 <a id="en-8"></a>
 
