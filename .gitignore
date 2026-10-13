@@ -1,0 +1,30 @@
+# Credentials and local environment
+.env
+.env.*
+!.env.example
+auth.json
+*.pem
+*.key
+cookies.txt
+
+# Codex CLI stores login state here. Never copy this directory into the repo.
+.codex/
+
+# Zotero profile, databases, and private exports
+zotero-profile/
+*.sqlite
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+
+# Full texts and local dumps do not belong in a public guide
+*.pdf
+*.epub
+*.zip
+
+# Editor and OS
+.DS_Store
+*~
+*.swp
+.idea/
+.vscode/
